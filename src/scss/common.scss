@@ -1,0 +1,32 @@
+// 전반적인 공통클래스
+@import url('https://cdn.jsdelivr.net/npm/pretendard/dist/web/static/pretendard.css');
+//public의  index의 link 삽입하기
+body{
+  .navbar {
+    background-color: #fff; /* 헤더 배경색 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 헤더 그림자 */
+}
+}
+
+// 폰트 두께 공통 클래스 정의
+// scss for 쿼리
+@for $i from 1 through 9 {
+  .font-#{$i * 100} {
+    font-weight: #{$i * 100};
+  }
+}
+
+
+// 폰트 크기 클래스 생성
+@for $size from 20 through 100 {
+  .fs-#{$size} { 
+    font-size: #{$size}px !important; 
+  }
+}
+
+// 높이 퍼센트 클래스 생성
+@for $h from 1 through 4 {
+  .height-#{50 * $h} {
+      height: #{50 * $h}px;
+  }
+}

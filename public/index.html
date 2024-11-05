@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+
+    
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <title>React practice</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+
+    <script>
+      setTimeout(() => {
+      document.getElementById('about').classList.add('change-background');
+
+      // 배경색이 변경된 후 텍스트가 서서히 나타나게 추가 지연
+      setTimeout(() => {
+        document.getElementById('text').classList.add('show-text');
+      }, 1000); // 텍스트 지연 시간: 배경색 변경 후 1초 뒤
+    }, 1000); 
+    </script>
+
+  </body>
+</html>
